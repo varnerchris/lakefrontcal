@@ -1,0 +1,33 @@
+.events {
+    margin: 1rem 3rem 0;
+}
+
+.right {
+    float: right;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:800&display=swap');
+
+h1 {
+    font-size: 3em;
+    color:#182851;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+    font-size: 1.4em;
+}
+
+li, ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 0.5em;
+    border-bottom: 2px solid #182851;
+    padding-bottom: 0.5em;
+    font-weight: bold;
+    color:#182851;
+}
