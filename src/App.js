@@ -4,6 +4,7 @@ import Background from './components/Background/Background';
 //import Parser from './util/Parser'
 
 function App() {
+
   return (
     <div className="App">
       <Background/>
