@@ -9,13 +9,11 @@ constructor(props){
   super(props);
   this.state={  }
 }
+componentDidMount()  {
+      let Parser = require('rss-parser');
+      let parser = new Parser();
 
-
-render(){
-  let Parser = require('rss-parser');
-  let parser = new Parser();
-
-  (async () => {
+    (async () => {
     const CORS_PROXY = "https://cors-anywhere.herokuapp.com/"
     let feed = await parser.parseURL(CORS_PROXY + 'https://www.winpark.org/events/feed/');
 
@@ -25,6 +23,10 @@ render(){
     });
 
   })();
+}
+
+render(){
+
 
   return(
     <div className="events">
