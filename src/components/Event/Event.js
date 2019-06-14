@@ -1,16 +1,20 @@
 import React from 'react'
 import './Event.css'
-
+import moment from 'moment'
 
 class Event extends React.Component{
-render(){
+  render(){
+    console.log(this.props.model)
 
-  return(
-    <li><h2>Event Name </h2>
-    <span>Date, Location</span>
-    <span className="right">Time</span>
-    </li>
-)
-}
+    let eventTime = new moment(this.props.model.pubDate)
+
+    return(
+      <li>
+        <h2>{this.props.model.title} </h2>
+        <span>{eventTime.format('dddd, MMMM D')}</span>
+        <span className="right">{eventTime.format('h:mmA')}</span>
+      </li>
+    )
+  }
 }
 export default Event;
