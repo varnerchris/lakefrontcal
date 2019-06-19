@@ -1,5 +1,27 @@
+body {
+     animation: colorchange 1800s; /* animation-name followed by duration in seconds*/
+        /* you could also use milliseconds (ms) or something like 2.5s */
+     -webkit-animation: colorchange 1800s; /* Chrome and Safari */
+   }
+
+   @keyframes colorchange
+   {
+     0%   {background: #ffffff;}
+     25%  {background: #182851;}
+     50%  {background: #ffffff;}
+     75%  {background: #182851;}
+     100% {background: #ffffff;}
+   }
+
+   @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+   {
+     0%   {background: #ffffff;}
+     25%  {background: #182851;}
+     50%  {background: #ffffff;}
+     75%  {background: #182851;}
+     100% {background: #ffffff;}
+   }
 .rss{
-  background-color: #182851;
   width:1920px;
   height: 1080px;
 }

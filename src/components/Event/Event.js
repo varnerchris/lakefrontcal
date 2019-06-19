@@ -4,7 +4,7 @@ import moment from 'moment'
 
 class Event extends React.Component{
   render(){
-    console.log(this.props.model)
+//    console.log(this.props.model)
 
     let eventTime = new moment(this.props.model.pubDate)
 
